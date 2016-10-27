@@ -3,6 +3,7 @@ import commonConfig from './webpack.common';
 import paths from './paths';
 
 export default webpackMerge(commonConfig, {
+  devtool: 'cheap-module-source-map',
   output: {
     path: paths.dist,
     pathinfo: true,
