@@ -2,8 +2,10 @@ import React from 'react';
 
 const AboutComponent = () => {
   return (
-    <div>
-      <p>About</p>
+    <div className="dc-row">
+      <header className="dc-column">
+        <h1>About</h1>
+      </header>
     </div>
   );
 }

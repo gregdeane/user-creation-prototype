@@ -3,11 +3,13 @@ import { Link } from 'react-router';
 
 const HomeComponent = () => {
   return (
-    <div>
-      <p>Home Component</p>
-      <Link to="about" className="btn btn-primary btn-lg">
-        Learn more
-      </Link>
+    <div className="dc-row">
+      <header className="dc-column">
+        <h1>Home</h1>
+        <Link to="about" className="dc-btn dc-btn--primary">
+          Learn more
+        </Link>
+      </header>
     </div>
   );
 };
