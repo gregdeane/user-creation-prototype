@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@zalando.de"
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jane.doe@zalando.de"
+    },
+    {
+      "id": 3,
+      "firstName": "Bill",
+      "lastName": "Smith",
+      "email": "bill.smith@zalando.de"
+    }
+  ],
+  "test": {
+    "result": "WORKS!"
+  }
+}
