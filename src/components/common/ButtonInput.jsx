@@ -4,7 +4,7 @@ const ButtonInput = ({ type, label, disabled, onClick }) => {
   return (
     <button type={type}
             disabled={disabled}
-            className="btn btn-primary"
+            className="dc-btn dc-btn--primary"
             onClick={onClick}>
       {label}
     </button>

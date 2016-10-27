@@ -4,21 +4,19 @@ import UserListRow from './UserListRow';
 
 const UserList = ({users}) => {
   return (
-    <div className="table-responsive">
-      <table className="table table-hover">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map(user =>
-            <UserListRow key={user.id} user={user} />
-          )}
-        </tbody>
-      </table>
-    </div>
+    <table className="dc-table">
+      <thead className="dc-table__thead">
+        <tr className="dc-table__tr dc-table__tr--interactive">
+          <th className="dc-table__th">Name</th>
+          <th className="dc-table__th">Email</th>
+        </tr>
+      </thead>
+      <tbody className="dc-table__tbody">
+        {users.map(user =>
+          <UserListRow key={user.id} user={user} />
+        )}
+      </tbody>
+    </table>
   );
 };
 
