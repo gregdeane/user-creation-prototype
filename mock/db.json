@@ -19,7 +19,95 @@
       "email": "bill.smith@zalando.de"
     }
   ],
-  "test": {
-    "result": "WORKS!"
-  }
+  "user-emails": [
+    {
+      "email": "jane.doe@zalando.de"
+    },
+    {
+      "email": "hank.shite@zalando.de"
+    }
+  ],
+  "applications": [
+    {
+      "productId": "content",
+      "bpId": 14,
+      "id": 22,
+      "name": "CMS",
+      "url": "https://zalan.do/cms"
+    },
+    {
+      "productId": "insights",
+      "bpId": 14,
+      "id": 14,
+      "name": "Analytics",
+      "url": "https://zalan.do/analytics"
+    },
+    {
+      "id": 9,
+      "name": "Coplanner",
+      "url": "https://zalan.do/coplanner"
+    },
+    {
+      "productId": "merchant-center",
+      "bpId": 5,
+      "id": 88,
+      "name": "Articles",
+      "url": "https://zalan.do/articles"
+    },
+    {
+      "productId": "merchant-center",
+      "bpId": 5,
+      "id": 82,
+      "name": "Orders",
+      "url": "https://zalan.do/orders"
+    }
+  ],
+  "products": [
+    {
+      "id": "content",
+      "name": "Content",
+      "applications": [
+        {
+          "id": "cms",
+          "name": "CMS",
+          "product_id": "content",
+          "business_partner_roles": ["MERCHANT", "TRADE_MARK_OWNER"],
+          "url": "https://zalan.do/cms"
+        }
+      ]
+    },
+    {
+      "id": "insights",
+      "name": "Insights"
+    },
+    {
+      "id": "merchant-center",
+      "name": "Merchant Center"
+    }
+  ],
+  "bp": [
+    {
+      "applicationId": 22,
+      "id": 14,
+      "name": "Adidas",
+      "roles": [
+        {
+          "name": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "applicationId": 22,
+      "id": 5,
+      "name": "Nike",
+      "roles": [
+        {
+          "name": "MERCHANT"
+        },
+        {
+          "name": "SUPPLIER"
+        }
+      ]
+    }
+  ]
 }
