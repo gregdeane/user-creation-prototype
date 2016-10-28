@@ -17,6 +17,12 @@
       "firstName": "Bill",
       "lastName": "Smith",
       "email": "bill.smith@zalando.de"
+    },
+    {
+      "id": 4,
+      "firstName": "Bob",
+      "lastName": "Jones III",
+      "email": "bob.jones@zalando.de"
     }
   ],
   "user-emails": [
@@ -71,7 +77,10 @@
           "id": "cms",
           "name": "CMS",
           "product_id": "content",
-          "business_partner_roles": ["MERCHANT", "TRADE_MARK_OWNER"],
+          "business_partner_roles": [
+            "MERCHANT",
+            "TRADE_MARK_OWNER"
+          ],
           "url": "https://zalan.do/cms"
         }
       ]

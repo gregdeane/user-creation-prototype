@@ -52,7 +52,6 @@ class ManageUserContainer extends Component {
   render() {
     return (
       <UserForm user={this.state.user}
-                errors={this.state.errors}
                 onSave={this.saveUser}
                 onChange={this.updateUserState} />
     )

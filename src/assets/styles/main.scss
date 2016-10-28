@@ -2,6 +2,10 @@
 @import "dress-code";
 @include dc-everything;
 
+.dc-btn {
+  display: block;
+  width: 100%;
+}
 .hide {
   display: none;
 }
@@ -23,5 +27,16 @@
       background-image: url(../img/svg-icons/arrow-right.svg);
       content: " ";
     }
+  }
+}
+
+// mobile first
+.applications {
+  display: none;
+}
+
+@media (min-width: $dc-large-width) {
+  .applications {
+    display: block;
   }
 }
