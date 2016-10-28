@@ -2,10 +2,15 @@
 @import "dress-code";
 @include dc-everything;
 
+.dc-row {
+  position: relative;
+}
+
 .dc-btn {
   display: block;
   width: 100%;
 }
+
 .hide {
   display: none;
 }
@@ -32,7 +37,13 @@
 
 // mobile first
 .applications {
+  position: absolute;
   display: none;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 @media (min-width: $dc-large-width) {
