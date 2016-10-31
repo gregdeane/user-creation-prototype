@@ -15,10 +15,10 @@ export default {
   entry: [
     'react-dev-utils/webpackHotDevClient',
     helpers.root('config', 'polyfills.js'),
-    helpers.root('src', 'index.jsx')
+    helpers.root('src', 'index.js')
   ],
   resolve: {
-    extensions: ['', '.json', '.js', '.jsx']
+    extensions: ['.js', '.json', '.jsx', '']
   },
   module: {
     preLoaders: [{
