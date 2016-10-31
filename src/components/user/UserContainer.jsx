@@ -18,7 +18,7 @@ class UserContainer extends Component {
 
   render() {
     return (
-      <div className="col-xs-12">
+      <div>
         <h1>Users</h1>
         <ButtonInput type="submit"
                      label="Add User"
