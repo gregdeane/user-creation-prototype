@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 
-import HeaderComponent from './common/HeaderComponent';
+import Header from './common/Header';
 
 const App = (props) => {
   return(
     <div>
-      <HeaderComponent />
+      <Header />
       {props.children}
     </div>
   );

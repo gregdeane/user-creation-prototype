@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutComponent = () => {
+const About = () => {
   return (
     <div className="dc-row">
       <header className="dc-column">
@@ -10,4 +10,4 @@ const AboutComponent = () => {
   );
 }
 
-export default AboutComponent;
+export default About;

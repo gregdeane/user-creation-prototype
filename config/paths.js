@@ -6,6 +6,6 @@ export default {
   src: helpers.root('src'),
   config: helpers.root('config'),
   html: helpers.root('src', 'index.html'),
-  index: helpers.root('src', 'index.jsx'),
+  index: helpers.root('src', 'index.js'),
   packageJson: helpers.root('package.json')
 }

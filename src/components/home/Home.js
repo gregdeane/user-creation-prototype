@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const HomeComponent = () => {
+const Home = () => {
   return (
     <div className="dc-row">
       <header className="dc-column">
@@ -14,4 +14,4 @@ const HomeComponent = () => {
   );
 };
 
-export default HomeComponent;
+export default Home;

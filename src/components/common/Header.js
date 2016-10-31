@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
-const HeaderComponent = () => {
+const Header = () => {
   return (
     <nav className="dc-row">
       <div className="dc-column">
@@ -21,4 +21,4 @@ const HeaderComponent = () => {
   );
 };
 
-export default HeaderComponent;
+export default Header;
