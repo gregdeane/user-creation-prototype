@@ -1,1 +1,2 @@
 export const UPDATE_USERS = 'UPDATE_USERS';
+export const UPDATE_USER_FORM_DATA = 'UPDATE_USER_FORM_DATA';

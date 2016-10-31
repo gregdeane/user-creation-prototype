@@ -32,3 +32,10 @@ export const updateUser = (user) => {
       .catch(throwError);
   };
 };
+
+export const updateUserFormData = (userData) => {
+  return {
+    type: types.UPDATE_USER_FORM_DATA,
+    userData
+  };
+};
