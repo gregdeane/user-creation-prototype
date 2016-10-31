@@ -10,9 +10,7 @@ class UserApi {
         this.users = Object.assign([], response.data);
         return this.users;
       })
-      .catch(error => {
-        throw error;
-      });
+      .catch(this.throwError);
   }
 
   static createUser(user) {
@@ -22,9 +20,7 @@ class UserApi {
         this.users.push(response.data);
         return this.users;
       })
-      .catch(error => {
-        throw error;
-      });
+      .catch(this.throwError);
   }
 
   static updateUser(user) {
@@ -35,17 +31,17 @@ class UserApi {
         this.users.splice(index, 1, response.data);
         return this.users;
       })
-      .catch(error => {
-        throw error;
-      });
+      .catch(this.throwError);
   }
 
   static deleteUser(user) {
     return axios.delete(`${url}/users/${user.id}`)
       .then(response => response.data)
-      .catch(error => {
-        throw error;
-      });
+      .catch(this.throwError);
+  }
+
+  static throwError(error) {
+    throw error;
   }
 
 }
