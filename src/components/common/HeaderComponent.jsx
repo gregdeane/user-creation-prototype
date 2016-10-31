@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
-import './common.scss';
-
 const HeaderComponent = () => {
   return (
     <nav className="dc-row">

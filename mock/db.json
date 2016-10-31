@@ -71,7 +71,10 @@
           "id": "cms",
           "name": "CMS",
           "product_id": "content",
-          "business_partner_roles": ["MERCHANT", "TRADE_MARK_OWNER"],
+          "business_partner_roles": [
+            "MERCHANT",
+            "TRADE_MARK_OWNER"
+          ],
           "url": "https://zalan.do/cms"
         }
       ]

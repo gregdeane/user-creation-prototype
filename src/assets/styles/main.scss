@@ -1,3 +1,53 @@
 @import "breakpoint";
 @import "dress-code";
 @include dc-everything;
+
+.dc-row {
+  position: relative;
+}
+
+.dc-btn {
+  display: block;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.temp-border {
+  border: 1px solid $dc-gray30;
+
+  ul, li {
+    position: relative;
+    list-style-type: none;
+
+    .dc-list__item--is-interactive:after {
+      position: absolute;
+      top: 50%;
+      right: -.6rem;
+      width: 3.6rem;
+      height: 3.6rem;
+      margin-top: -1.8rem;
+      background-image: url(../img/svg-icons/arrow-right.svg);
+      content: " ";
+    }
+  }
+}
+
+// mobile first
+.applications {
+  position: absolute;
+  display: none;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: $dc-large-width) {
+  .applications {
+    display: block;
+  }
+}
