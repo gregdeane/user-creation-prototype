@@ -1,6 +1,4 @@
 import React, { PropTypes } from 'react';
-import TextInput from '../common/TextInput';
-import ButtonInput from '../common/ButtonInput';
 
 const Applications = ({ heading }) => {
   return (
