@@ -11,12 +11,6 @@
       "firstName": "Jane",
       "lastName": "Doe",
       "email": "jane.doe@zalando.de"
-    },
-    {
-      "id": 3,
-      "firstName": "Bill",
-      "lastName": "Smith",
-      "email": "bill.smith@zalando.de"
     }
   ],
   "user-emails": [

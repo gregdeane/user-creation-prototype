@@ -33,12 +33,10 @@ UserContainer.propTypes = {
   users: PropTypes.array.isRequired
 };
 
-// `state.users` because alias `users` is used in `combineReducers` (reducers/index.js)
-const mapStateToProps = (state) => {
-  return {
-    users: state.users
-  };
-};
+// `state.data` because alias `data` is used in `combineReducers` (reducers/index.js)
+const mapStateToProps = (state) => ({
+  users: state.userReducer.users
+});
 
 export default connect(
   mapStateToProps
