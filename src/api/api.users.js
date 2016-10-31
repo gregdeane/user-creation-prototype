@@ -2,10 +2,14 @@ import axios from 'axios';
 import { url } from './environment';
 
 class UserApi {
+  users = [];
 
   static getUsers() {
     return axios.get(`${url}/users`)
-      .then(response => response.data)
+      .then(response => {
+        this.users = Object.assign([], response.data);
+        return this.users;
+      })
       .catch(error => {
         throw error;
       });
@@ -13,7 +17,11 @@ class UserApi {
 
   static createUser(user) {
     return axios.post(`${url}/users`, user)
-      .then(response => response.data)
+      .then(response => {
+        this.users = Object.assign([], this.users);
+        this.users.push(response.data);
+        return this.users;
+      })
       .catch(error => {
         throw error;
       });
@@ -21,7 +29,12 @@ class UserApi {
 
   static updateUser(user) {
     return axios.put(`${url}/users/${user.id}`, user)
-      .then(response => response.data)
+      .then(response => {
+        const index = this.users.findIndex(u => u.id === user.id);
+        this.users = Object.assign([], this.users);
+        this.users.splice(index, 1, response.data);
+        return this.users;
+      })
       .catch(error => {
         throw error;
       });

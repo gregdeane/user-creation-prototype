@@ -73,18 +73,13 @@ const getUser = (users, id) => {
   return (user.length && user[0]) || initial;
 };
 
-const mapStateToProps = (state, ownProps) => {
-  let user = getUser(state.users, +ownProps.params.id);  // ownProps.params.id from `/user/:id`
-  return {
-    user: user
-  };
-};
+const mapStateToProps = (state, ownProps) => ({
+  user: getUser(state.userReducer.users, +ownProps.params.id)  // ownProps.params.id from `/user/:id`
+});
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    actions: bindActionCreators(userActions, dispatch)
-  };
-};
+const mapDispatchToProps = (dispatch) => ({
+  actions: bindActionCreators(userActions, dispatch)
+});
 
 export default connect(
   mapStateToProps,

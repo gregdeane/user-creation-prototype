@@ -1,22 +1,14 @@
 import * as types from '../constants/action.types';
 import userApi from '../api/api.users';
 
-export const loadUsersSuccess = (users) => {
-  return { type: types.LOAD_USERS_SUCCESS, users };
-};
-
-export const createUserSuccess = (user) => {
-  return { type: types.CREATE_USER_SUCCESS, user };
-};
-
-export const updateUserSuccess = (user) => {
-  return { type: types.UPDATE_USER_SUCCESS, user };
+export const updateUsers = (users) => {
+  return { type: types.UPDATE_USERS, users };
 };
 
 export const loadUsers = () => {
   return (dispatch) => {
     userApi.getUsers()
-      .then(users => dispatch(loadUsersSuccess(users)))
+      .then(users => dispatch(updateUsers(users)))
       .catch(error => {
         throw error;
       });
@@ -26,7 +18,7 @@ export const loadUsers = () => {
 export const saveUser = (user) => {
   return (dispatch) => {
     userApi.createUser(user)
-      .then(user => dispatch(createUserSuccess(user)))
+      .then(users => dispatch(updateUsers(users)))
       .catch(error => {
         throw error;
       });
@@ -36,7 +28,7 @@ export const saveUser = (user) => {
 export const updateUser = (user) => {
   return (dispatch) => {
     userApi.updateUser(user)
-      .then(user => dispatch(updateUserSuccess(user)))
+      .then(users => dispatch(updateUsers(users)))
       .catch(error => {
         throw error;
       });
